@@ -156,6 +156,13 @@ $(document).ready(function(){
             $(".spanEmail").show();
         }
     });
+    $("#emailRegistro").change(function(){
+        if($("#emailRegistro").val() !== '' && emailValidator($("#emailRegistro").val())){
+            $(".spanEmailRegistro").hide();
+        }else{
+            $(".spanEmailRegistro").show();
+        }
+    });
     $("#CBU").change(function(){
         if($("#CBU").val() !== null && $("#CBU").val() !== '' ){
             if($("#CBU").val() >= 0000000000000000000000 && $("#CBU").val() <= 9999999999999999999999){
@@ -174,8 +181,8 @@ $(document).ready(function(){
         }
     });
     $("#CVU").change(function(){
-        if($("#CVU").val() !== null && $("#CBU").val() !== '' ){
-            if($("#CVU").val() >= 0000000000000000000000 && $("#CBU").val() <= 9999999999999999999999){
+        if($("#CVU").val() !== null && $("#CVU").val() !== '' ){
+            if($("#CVU").val() >= 0000000000000000000000 && $("#CVU").val() <= 9999999999999999999999){
                 $(".spanCBU").hide();
                 $(".spanCVU").hide();
                 $(".spanCuit").hide();
@@ -262,6 +269,7 @@ $(document).ready(function(){
         let patenteValidado = $('.spanPatente').is(':hidden');
         let medioPagoValidado = $('.spanPago').is(':hidden');
         let passwordValidado = $('.spanPassword').is(':hidden');
+        let emailRegistroValidado = $('.spanEmailRegistro').is(':hidden');
         let emailValidado;
         let CBUValidado;
         let CVUValidado;
@@ -320,7 +328,7 @@ $(document).ready(function(){
             vencimientoValidado = true;
         }
         
-        if(nombreValidado && apellidoValidado && domicilioValidado && dniValidado && fechaNacimientoValidado && marcaValidado && modeloValidado && añoValidado && colorValidado && 
+        if(nombreValidado && apellidoValidado && domicilioValidado && dniValidado && fechaNacimientoValidado && marcaValidado && modeloValidado && añoValidado && colorValidado && emailRegistroValidado &&
            patenteValidado && medioPagoValidado && emailValidado && CBUValidado && CVUValidado && cuitValidado && numeroValidado && codigoSeguridadValidado && vencimientoValidado && passwordValidado){
             confirmarRegistro();
         }
