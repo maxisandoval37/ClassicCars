@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Classic Cars</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="icon" href="../images/autoAntiguo.png" type="image/png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="../js/encuesta.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse" style="background: dodgerblue">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html" style="color: white" >Classic Cars</a>
+                <ul class="nav navbar-nav">
+                    <li><a style="color: white" href="productos.html">Productos </a></li>
+                    <li><a style="color: white" href="servicios.html">Servicios</a></li>
+                </ul>
+            </div>
+            <div class="login">
+                <ul class="nav navbar-nav navbar-right ">
+                    <li class="registrar loginButtons"><a style="color: white" href="registro.html"><span class="glyphicon glyphicon-user"></span> Registrarse </a></li>
+                    <li class="iniciar loginButtons"><a style="color: white" href="login.html"><span class="glyphicon glyphicon-log-in"></span> Iniciar Sesi&oacute;n</a></li>
+                    <li class="saludo logoutButtons " style="display:none;color: white"></li>
+                    <li class="cerrarSesion logoutButtons" style="display:none"><a style="color: white" href="login.html"><span class="glyphicon glyphicon-log-out"></span> Cerrar Sesi&oacute;n</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div style="background-color:#5C5C5C">
+        <div class="containerInicio row" >
+            <article class='contenido'>
+                <form method='POST' action="index.html">
+                    <p style="font-size:22px;color:#fff;margin-top:10px">¡Bienvenido! Por favor completa esta encuesta con tus preferencias</p>
+                    <br>
+                    <h4 style="color:#fff">Edad</h4>
+                        <input type='number' placeholder='Ingrese una edad' class='controls' required/>
+                    <br />
+                    <br />
+                    <h4 style="color:#fff">¿Como conociste Classic Cars?</h4>
+                        <select class="controls">
+                            <option>Por referencia</option>
+                            <option>Internet</option>	
+                            <option>Redes sociales</option>	
+                        </select>
+                    <br />
+                    <br />
+                    <h4 style="color:#fff">¿Qué servicios le interesan?</h4>
+                        <label for="servicio1"> Chapa y Pintura <input type="checkbox" id="servicio1" name="servicio1" value="Chapa y Pintura"></label>
+                        <br>
+                        <label for="servicio2"> Tapicería <input type="checkbox" id="servicio2" name="servicio2" value="Tapicería"></label>      
+                        <br>
+                        <label for="servicio3"> Vidriería <input type="checkbox" id="servicio3" name="servicio3" value="Vidriería"></label>
+                        <br>
+                        <label for="servicio4"> Reparación de Plásticos <input type="checkbox" id="servicio4" name="servicio4" value="Reparación de Plásticos"></label>
+                        <br>
+                        <label for="servicio5"> Restauración de Interiores <input type="checkbox" id="servicio5" name="servicio5" value="Restauración de Interiores"></label>
+                        <br>
+                        <label for="servicio6"> Gomería <input type="checkbox" id="servicio6" name="servicio6" value="Gomería"></label>
+                        <br>
+                        <label for="servicio7"> Mecánica integral <input type="checkbox" id="servicio7" name="servicio7" value="Mecánica integral"></label>
+                        <br>
+                        <label for="servicio8"> Lubricentro <input type="checkbox" id="servicio8" name="servicio8" value="Lubricentro"></label>
+                        <br>
+                        <label for="servicio9"> Detailing completo <input type="checkbox" id="servicio9" name="servicio9" value="Detailing completo"></label>
+                    <br>
+                    <br>
+                    <h4 style="color:#fff">¿Qué productos le gustan?</h4>
+                        <label for="producto1"> Juego de llaves combinadas x 5 <input type="checkbox" id="producto1" name="producto1" value="Juego de llaves combinadas x 5"></label>
+                        <br>
+                        <label for="producto2"> Juego de llaves combinadas x 10 <input type="checkbox" id="producto2" name="producto2" value="Juego de llaves combinadas x 10"></label>      
+                        <br>
+                        <label for="producto3"> Juego de llaves combinadas x 15 <input type="checkbox" id="producto3" name="producto3" value="Juego de llaves combinadas x 15"></label>
+                        <br>
+                        <label for="producto4"> Llaves tubo x 20 <input type="checkbox" id="producto4" name="producto4" value="Llaves tubo x 20"></label>
+                        <br>
+                        <label for="producto5"> Llaves tubo x 50 <input type="checkbox" id="producto5" name="producto5" value="Llaves tubo x 50"></label>
+                        <br>
+                        <label for="producto6"> Kit Destornilladores x 10 <input type="checkbox" id="producto6" name="producto6" value="Kit Destornilladores x 10"></label>
+                        <br>
+                        <label for="producto7"> Kit Destornilladores x 20 <input type="checkbox" id="producto7" name="producto7" value="Kit Destornilladores x 20"></label>
+                        <br>
+                        <label for="producto8"> Paño microfibra 40x40 <input type="checkbox" id="producto8" name="producto8" value="Paño microfibra 40x40"></label>
+                        <br>
+                        <label for="producto8"> Paño microfibra 60x40 <input type="checkbox" id="producto8" name="producto8" value="Paño microfibra 60x40"></label>
+                        <br>
+                        <label for="producto8"> Compresor 50 litros 2.5hp <input type="checkbox" id="producto8" name="producto8" value="Compresor 50 litros 2.5hp"></label>
+                        <br>
+                        <label for="producto8"> Compresor 100 litros 2.5hp <input type="checkbox" id="producto8" name="producto8" value="Compresor 100 litros 2.5hp"></label>
+                        <br>
+                        <label for="producto9"> Compresor 200 litros 3hp <input type="checkbox" id="producto9" name="producto9" value="Compresor 200 litros 3hp"></label>
+                        <br>
+                        <label for="producto10"> Kit extractor de tapizados x 3 <input type="checkbox" id="producto10" name="producto10" value="Kit extractor de tapizados x 3"></label>
+                        <br>
+                        <label for="producto11"> Kit extractor de tapizados x 6 <input type="checkbox" id="producto11" name="producto11" value="Kit extractor de tapizados x 6"></label>
+                        <br>
+                        <label for="producto12"> Pulidora 1000w <input type="checkbox" id="producto12" name="producto12" value="Pulidora 1000w"></label>
+                        <br>
+                        <label for="producto13"> Pulidora 1600w <input type="checkbox" id="producto13" name="producto13" value="Pulidora 1600w"></label>
+                        <br>
+                        <label for="producto14"> Amoladora 600w <input type="checkbox" id="producto14" name="producto14" value="Amoladora 600w"></label>
+                        <br>
+                        <label for="producto15"> Amoladora 820w <input type="checkbox" id="producto15" name="producto15" value="Amoladora 820w"></label>
+                        <br>
+                        <label for="producto16"> Shampoo 1lt <input type="checkbox" id="producto16" name="producto16" value="Shampoo 1lt"></label>
+                        <br>
+                        <label for="producto17"> Shampoo 5lt <input type="checkbox" id="producto17" name="producto17" value="Shampoo 5lt"></label>
+                        <br>
+                        <label for="producto18"> Hidrolavadora Hogar <input type="checkbox" id="producto18" name="producto18" value="Hidrolavadora Hogar"></label>
+                        <br>
+                        <label for="producto19"> Hidrolavadora Premium <input type="checkbox" id="producto19" name="producto19" value="Hidrolavadora Premium"></label>
+                    <br>
+                    <input type='submit' value='Enviar encuesta' class='btn' style="margin-bottom: 20px;"/>
+                </form>
+            </article>
+        </div>
+    </div>
+    <footer class="section footer-classic context-dark bg-image text-center" style="background:dodgerblue;">
+        <br>
+        <p style="color:white";>Todos los derechos reservados</p>
+        <br>
+    </footer>
+</body>
+</html>

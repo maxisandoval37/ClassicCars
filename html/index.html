@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Classic Cars</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="icon" href="../images/autoAntiguo.png" type="image/png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="../js/index.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse" style="background: dodgerblue">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html" style="color: white" >Classic Cars</a>
+                <ul class="nav navbar-nav">
+                    <li><a style="color: white" href="productos.html">Productos </a></li>
+                    <li><a style="color: white" href="servicios.html">Servicios</a></li>
+                </ul>
+            </div>
+            <div class="login">
+                <ul class="nav navbar-nav navbar-right ">
+                    <li class="registrar loginButtons"><a style="color: white" href="registro.html"><span class="glyphicon glyphicon-user"></span> Registrarse </a></li>
+                    <li class="iniciar loginButtons"><a style="color: white" href="login.html"><span class="glyphicon glyphicon-log-in"></span> Iniciar Sesi&oacute;n</a></li>
+                    <li class="saludo logoutButtons " style="display:none;color: white"></li>
+                    <li class="cerrarSesion logoutButtons" style="display:none"><a style="color: white" href="login.html"><span class="glyphicon glyphicon-log-out"></span> Cerrar Sesi&oacute;n</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div style="background-image: url(../images/classicCars.jpg);background-repeat: no-repeat;background-size: cover;background-position: bottom;">
+        <div class="containerInicio row">
+            <div style="text-align:center;margin-top: 250px;">
+                <p style="color: #fff;font-size: 50px">¿Qué desea hacer?</p>
+                <div>
+                    <a class="buttonsAction" href="productos.html" style="font-size: 40px;padding-left:5px;margin-right: 50px;border:1px solid #fff">
+                        Comprar productos
+                    </a>
+                    <a class="buttonsAction" href="servicios.html" style="font-size: 40px;padding-left:5px;border:1px solid #fff">
+                        Reservar servicios
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="section footer-classic context-dark bg-image text-center" style="background:dodgerblue;">
+        <br>
+        <p style="color:white";>Todos los derechos reservados</p>
+        <br>
+    </footer>
+</body>
+</html>

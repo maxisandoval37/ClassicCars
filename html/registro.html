@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Classic Cars</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="icon" href="../images/autoAntiguo.png" type="image/png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="../js/registro.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse" style="background: dodgerblue">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html" style="color: white" >Classic Cars</a>
+            </div>
+        </div>
+    </nav>
+    <div style="background-image: url(../images/classicCars.jpg);background-repeat: no-repeat;background-size: cover;background-position: bottom; padding-bottom: 20px;">
+        <div class="containerRegistro row">
+            <div class="registroContainer col-md-4">
+                <form class="form">
+                    <h1 style="color:#fff">Registrarse</h1>
+                    <h3 style="color:#fff">Datos personales</h3>
+                    <div class="fields">
+                        <label>Nombre*:</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Ingrese un nombre" required>
+                        <span class="spanNombre" style="color:red; font-size: 11px;">Es obligatorio</span>
+                    </div>
+                    <div class="fields">
+                        <label>Apellido*:</label>
+                        <input type="text" name="apellido" id="apellido" placeholder="Ingrese un apellido" required>
+                        <span class="spanApellido" style="color:red; font-size: 11px;">Es obligatorio</span>
+                    </div>
+                    <div class="fields">
+                        <label>Domicilio*:</label>
+                        <input type="text" name="domicilio" id="domicilio" placeholder="Ingrese un domicilio" required>
+                        <span class="spanDomicilio" style="color:red; font-size: 11px;">Es obligatorio</span>
+                    </div>
+                    <div class="fields">
+                        <label>DNI*:</label>
+                        <input type="number" oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="8" name="dni" id="dni" placeholder="Ingrese un dni" required>
+                        <span class="spanDNI" style="color:red; font-size: 11px;">Es obligatorio</span>
+                    </div>
+                    <div class="fields">
+                        <label>Fecha de Nacimiento*:</label>
+                        <input type="date" name="fechaNacimiento" id="fechaNacimiento" placeholder="Ingrese una fecha de nacimiento" required>
+                        <span class="spanNacimiento" style="color:red; font-size: 11px;">Es obligatorio</span>
+                    </div>
+                    <h3 style="color:#fff">Datos del vehículo</h3>
+                    <div class="fields">
+                        <label>Marca*:</label>
+                        <input type="text" name="marca" id="marca" placeholder="Ingrese una marca" required>
+                        <span class="spanMarca" style="color:red; font-size: 11px;">Es obligatorio</span>
+                    </div>
+                    <div class="fields">
+                        <label>Modelo*:</label>
+                        <input type="text" name="modelo" id="modelo" placeholder="Ingrese un modelo" required>
+                        <span class="spanModelo" style="color:red; font-size: 11px;">Es obligatorio</span>
+                    </div>
+                    <div class="fields">
+                        <label>Año*:</label>
+                        <input type="number" oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="4" name="año" id="año" placeholder="Ingrese un año" required>
+                        <span class="spanAño" style="color:red; font-size: 11px;">Es obligatorio</span>
+                    </div>
+                    <div class="fields">
+                        <label>Color*:</label>
+                        <input type="text" name="color" id="color" placeholder="Ingrese un color" required>
+                        <span class="spanColor" style="color:red; font-size: 11px;">Es obligatorio</span>
+                    </div>
+                    <div class="fields">
+                        <label>Patente*:</label>
+                        <input type="text" name="patente" id="patente" placeholder="Ingrese una patente" required>
+                        <span class="spanPatente" style="color:red; font-size: 11px;">Es obligatorio</span>
+                    </div>
+                    <h3 style="color:#fff">Datos de pago</h3>
+                    <div class="fields">
+                        <label>Medio de pago*:</label>
+                        <select name="medioPago" id="medioPago" required>
+                            <option id="opcionVacia">Seleccione un medio de pago</option>
+                            <option id="cuentaBancaria">Cuenta bancaria</option>
+                            <option id="mercadoPago">Mercado pago</option>
+                            <option id="tarjetaCredito">Tarjeta de credito</option>
+                        </select>
+                        <span class="spanPago" style="color:red; font-size: 11px;">Es obligatorio</span>
+                    </div>
+                    <div class="cBancaria" style="display:none">
+                        <div class="fields">
+                            <label>CBU:</label>
+                            <input type="number" oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="22" name="CBU" id="CBU" placeholder="Ingrese un CBU" >
+                            <span class="spanCBU" style="color:red; font-size: 11px;">Es obligatorio</span>
+                        </div>
+                        <div class="fields">
+                            <label>CVU:</label>
+                            <input type="number" oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="22" name="CVU" id="CVU" placeholder="Ingrese un CVU" >
+                            <span class="spanCVU" style="color:red; font-size: 11px;">Es obligatorio</span>
+                        </div>
+                        <div class="fields">
+                            <label>Cuit:</label>
+                            <input type="number" oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="11" name="cuit" id="cuit" placeholder="Ingrese un cuit" >
+                            <span class="spanCuit" style="color:red; font-size: 11px;">Es obligatorio</span>
+                        </div>
+                    </div>
+                    <div class="mPago fields" style="display:none">
+                        <label>Email:</label>
+                        <input type="text" name="email" id="email" placeholder="Ingrese un email" >
+                        <span class="spanEmail" style="color:red; font-size: 11px;">Es obligatorio</span>
+                    </div>
+                    <div class="tCredito" style="display:none">
+                        <div class="fields">
+                            <label>Número:</label>
+                            <input type="number" oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="16" name="numero" id="numero" placeholder="Ingrese un numero" >
+                            <span class="spanNumero" style="color:red; font-size: 11px;">Es obligatorio</span>
+                        </div>
+                        <div class="fields">
+                            <label>Código de seguridad:</label>
+                            <input type="number" oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="4" name="codigoSeg" id="codigoSeg" placeholder="Ingrese un código de seguridad" >
+                            <span class="spanSeguridad" style="color:red; font-size: 11px;">Es obligatorio</span>
+                        </div>
+                        <div class="fields">
+                            <label>Vencimiento:</label>
+                            <input type="text" oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="5" name="vencimiento" id="vencimiento" placeholder="Ingrese un vencimiento" pattern="[0-9]{2}-[0-9]{2}" >
+                            <span class="spanVencimiento" style="color:red; font-size: 11px;">Es obligatorio</span>
+                        </div>
+                    </div>
+                    <div class="fields">
+                        <label>Password :</label>
+                        <input type="password" name="passwordRegistro" id="passwordRegistro" placeholder="Ingrese un password" required>
+                        <span class="spanPassword" style="color:red; font-size: 11px;">Es obligatorio</span>
+                    </div>
+                    <button type="button" name="registrarse" id="registrarse">Registrarse</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="section footer-classic context-dark bg-image text-center" style="background:dodgerblue;">
+        <br>
+        <p style="color:white";>Todos los derechos reservados</p>
+        <br>
+    </footer>
+</body>
+</html>
+<!-- Modal -->
+<div class="modal fade" id="registroConfirmacion" tabindex="-1" role="dialog" aria-labelledby="registroConfirmacionTitle" aria-hidden="true" >
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content" style="height:200px;">
+        <div class="modal-body" style="height:120px;">
+            <p style="text-align: center;padding-top:30px; font-size: 18px;">El proceso de registro se realiz&oacute; con &eacute;xito</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">Aceptar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal -->

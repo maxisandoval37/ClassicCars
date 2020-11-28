@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Classic Cars</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="icon" href="../images/autoAntiguo.png" type="image/png" />
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="../js/login.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse" style="background: dodgerblue">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html" style="color: white" >Classic Cars</a>
+            </div>
+            <div class="login">
+                <ul class="nav navbar-nav navbar-right ">
+                    <li class="registrar loginButtons"><a style="color: white" href="registro.html"><span class="glyphicon glyphicon-user"></span> Registrarse </a></li>
+                    <li class="iniciar loginButtons"><a style="color: white" href="login.html"><span class="glyphicon glyphicon-log-in"></span> Iniciar Sesi&oacute;n</a></li>
+                    <li class="saludo logoutButtons " style="display:none;color: white"></li>
+                    <li class="cerrarSesion logoutButtons" style="display:none"><a style="color: white" href="login.html"><span class="glyphicon glyphicon-log-out"></span> Cerrar Sesi&oacute;n</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div style="background-image: url(../images/classicCars.jpg);background-repeat: no-repeat;background-size: cover;background-position: bottom;">
+        <div class="container row">
+            <div class="main col-md-4">
+                <form class="form">
+                    <h2 style="color:#fff">Iniciar Sesi&oacute;n</h2>
+                    <div class="fields">
+                        <label>Email:</label>
+                        <input type="text" name="usuario" id="usuario" placeholder="Ingrese un email" required>
+                    </div>
+                    <div class="fields">
+                        <label>Password :</label>
+                        <input type="password" name="password" id="password" placeholder="Ingrese un password" required>
+                    </div>
+                    <button type="submit" name="login" id="login"><a href="#">Iniciar Sesi&oacute;n</a></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="section footer-classic context-dark bg-image text-center" style="background:dodgerblue;height: 100px;">
+        <br>
+        <p style="color:white";>Todos los derechos reservados</p>
+        <br>
+    </footer>
+</body>
+</html>
+<!-- Modal -->
+<div class="modal fade" id="loginWarning" tabindex="-1" role="dialog" aria-labelledby="loginWarningTitle" aria-hidden="true" >
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content" style="height:200px;">
+        <div class="modal-body" style="height:120px;">
+            <p style="text-align: center;padding-top:30px; font-size: 18px;">El usuario o contraseña son inválidos.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">Aceptar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal -->
+<!-- Modal -->
+<div class="modal fade" id="usuarioBloqueado" tabindex="-1" role="dialog" aria-labelledby="usuarioBloqueadoTitle" aria-hidden="true" >
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content" style="height:200px;">
+        <div class="modal-body" style="height:120px;">
+            <p style="text-align: center;padding-top:30px; font-size: 18px;">Su cuenta ha sido suspendida temporalmente.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">Aceptar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal -->

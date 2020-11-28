@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Classic Cars</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="icon" href="../images/autoAntiguo.png" type="image/png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="../js/servicios.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse" style="background: dodgerblue">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html" style="color: white" >Classic Cars</a>
+                <ul class="nav navbar-nav">
+                    <li><a style="color: white" href="productos.html">Productos </a></li>
+                    <li><a style="color: white" href="servicios.html">Servicios</a></li>
+                </ul>
+            </div>
+            <div class="login">
+                <ul class="nav navbar-nav navbar-right ">
+                    <li class="registrar loginButtons"><a style="color: white" href="registro.html"><span class="glyphicon glyphicon-user"></span> Registrarse </a></li>
+                    <li class="iniciar loginButtons"><a style="color: white" href="login.html"><span class="glyphicon glyphicon-log-in"></span> Iniciar Sesi&oacute;n</a></li>
+                    <li class="saludo logoutButtons " style="display:none;color: white"></li>
+                    <li class="cerrarSesion logoutButtons" style="display:none"><a style="color: white" href="login.html"><span class="glyphicon glyphicon-log-out"></span> Cerrar Sesi&oacute;n</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="containerServicios" style="background-color:#5C5C5C">
+        <article class='contenido-servicios'>
+            <div class='categorias'>
+                <h2 class="listadoTalleres" style="color:#fff"> Listado de talleres</h2>
+                <br>
+                <ul class="listaTalleres" style="margin-left: 50px;">
+                    <li style="color:#fff">
+                        Pacheco
+                        <br>
+                        <br>
+                    </li>
+                    <li style="color:#fff">
+                        Malvinas Argentinas
+                        <br>
+                        <br>
+                    </li>
+                    <li style="color:#fff">
+                        Carapachay
+                        <br>
+                        <br>
+                    </li>
+                    <li style="color:#fff"> 
+                        Tigre
+                        <br>
+                        <br>
+                    </li>
+                    <li style="color:#fff">
+                        Victoria
+                        <br>
+                        <br>
+                    </li>
+                </ul>
+            </div>
+
+            <div class='productos' style="width:75%;">
+                <div>
+                    <h2 style="color:#fff;width:300px;"> Listado de servicios</h2>
+                    <hr>
+                    <br>
+                    <div class='seccionServicios'>
+                        <div class='productoItem'>
+                            <img src="../images/chapaPintura.jpg">
+                            <h3 style="color:#fff">Chapa y pintura</h3>
+                            <p style="color:#fff">$ 8.000,00</p>
+                            <button class="buttonReservar">Reservar</button>
+                        </div>
+                        <div class='productoItem'>
+                           <img src="../images/tapiceria.jpg">
+                            <h3 style="color:#fff">Tapicería</h3>
+                            <p style="color:#fff">$ 6.500,00</p>
+                            <button class="buttonReservar">Reservar</button>
+                        </div>
+                        <div class='productoItem'>
+                           <img src="../images/vidrieria.jpg">
+                            <h3 style="color:#fff">Vidriería</h3>
+                            <p style="color:#fff">$ 3.500,00</p>
+                            <button class="buttonReservar">Reservar</button>
+                        </div>
+                    </div>
+                </div>		
+                <br>
+                <br>  
+                <div>
+                    <div class='seccionServicios'>
+                        <div class='productoItem'>
+                            <img src="../images/reparacionPlasticos.jpg">
+                             <h3 style="color:#fff">Reparación de plásticos</h3>
+                             <p style="color:#fff">$ 8.000,00</p>
+                             <button class="buttonReservar">Reservar</button>
+                         </div>
+                        <div class='productoItem'>
+                            <img src="../images/restauracionInteriores.jpg">
+                            <h3 style="color:#fff">Restauración de interiores</h3>
+                            <p style="color:#fff">$ 3.600,00</p>
+                            <button class="buttonReservar">Reservar</button>
+                        </div>
+                        <div class='productoItem'>
+                            <img src="../images/gomeria.jpg">
+                            <h3 style="color:#fff">Gomería</h3>
+                            <p style="color:#fff">$ 3.000,00</p>
+                            <button class="buttonReservar">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div>
+                    <div class='seccionServicios'>
+                        <div class='productoItem'>
+                            <img src="../images/mecanicaIntegral.jpg">
+                            <h3 style="color:#fff">Mecánica integral</h3>
+                            <p style="color:#fff">$ 7.300,00</p>
+                            <button class="buttonReservar">Reservar</button>
+                        </div>
+                        <div class='productoItem'>
+                            <img src="../images/lubricentro.jpg">
+                            <h3 style="color:#fff">Lubricentro</h3>
+                            <p style="color:#fff">$ 4.000,00</p>
+                            <button class="buttonReservar">Reservar</button>
+                        </div>
+                        <div class='productoItem'>
+                            <img src="../images/detailingCompleto.jpg">
+                            <h3 style="color:#fff">Detailing completo</h3>
+                            <p style="color:#fff">$ 9.500,00</p>
+                            <button class="buttonReservar">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+    </div>
+    <footer class="section footer-classic context-dark bg-image text-center" style="background:dodgerblue;">
+        <br>
+        <p style="color:white";>Todos los derechos reservados</p>
+        <br>
+    </footer>
+</body>
+</html>
+<!-- Modal -->
+<div class="modal fade" id="reservaConfirmacion" tabindex="-1" role="dialog" aria-labelledby="reservaConfirmacionTitle" aria-hidden="true" >
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content" style="height:200px;">
+        <div class="modal-body" style="height:120px;">
+            <p style="text-align: center;padding-top:30px; font-size: 18px;">Se ha agregado la reserva al carrito!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">Aceptar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal -->
