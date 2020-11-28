@@ -6,6 +6,12 @@ $(document).ready(function(){
         localStorage.clear();
         location.reload();
     });
+
+    $("#enviarEncuesta").click( function() {
+        if($("#edadEncuesta").val() != '' && $("#edadEncuesta").val() != null && $("#edadEncuesta").val() != undefined && ($("#contactoEncuesta option:selected").val() != '' && $("#contactoEncuesta option:selected").val() != null )){
+            window.location.href = "index.html";
+        }
+    });
 });
 
 function bienvenida(){

@@ -34,15 +34,15 @@
     <div style="background-color:#5C5C5C">
         <div class="containerInicio row" >
             <article class='contenido'>
-                <form method='POST' action="index.html">
+                <div>
                     <p style="font-size:22px;color:#fff;margin-top:10px">¡Bienvenido! Por favor completa esta encuesta con tus preferencias</p>
                     <br>
                     <h4 style="color:#fff">Edad</h4>
-                        <input type='number' placeholder='Ingrese una edad' class='controls' required/>
+                        <input type='number' id="edadEncuesta" placeholder='Ingrese una edad' class='controls' required/>
                     <br />
                     <br />
                     <h4 style="color:#fff">¿Como conociste Classic Cars?</h4>
-                        <select class="controls">
+                        <select class="controls" id="contactoEncuesta">
                             <option>Por referencia</option>
                             <option>Internet</option>	
                             <option>Redes sociales</option>	
@@ -114,8 +114,8 @@
                         <br>
                         <label for="producto19"> Hidrolavadora Premium <input type="checkbox" id="producto19" name="producto19" value="Hidrolavadora Premium"></label>
                     <br>
-                    <input type='submit' value='Enviar encuesta' class='btn' style="margin-bottom: 20px;"/>
-                </form>
+                    <input type='submit' value='Enviar encuesta' class='btn' id="enviarEncuesta" style="margin-bottom: 20px;"/>
+                </div>
             </article>
         </div>
     </div>
